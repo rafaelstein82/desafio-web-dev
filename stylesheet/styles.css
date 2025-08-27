@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding:0;
+    margin: 0;
+}
+
+.background-image {
+    
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-size:cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+
+.dark-mode .background-image {
+    background-image: url('../images/background-dark.jpg');
+}
+
+.light-mode .background-image {
+    background-image: url('../images/background-light2.jpg');
+}
+
+.screen-edge-top {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;    
+    font-weight: bold;
+
+}
+
+/* TESTE SLIDER */
+
+.switch-container {
+  display: flex;
+  position: relative;
+  padding: 0;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.font-switch {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: bold;
+  /* color: white; */
+  margin: 10px;
+}
+
+.dark-mode .font-switch {
+  color: white;
+}   
+
+.light-mode .font-switch {
+  color: black;
+}
+
+.slider-orange {
+  position: absolute;
+  cursor: pointer;
+  width: 56px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: #FEAB6D; */
+  background-color: rgba(102, 202, 149, 1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-orange:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  /* background-color: white; */
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.dark-mode .slider-orange:before {
+  background-color: white;
+}
+
+.light-mode .slider-orange:before {
+  background-color: black;
+}
+
+input:checked + .slider-orange {
+    background-color: rgba(246, 103, 33, 1);
+}
+
+input:focus + .slider-orange {
+  box-shadow: 0 0 1px #FC7307;
+}
+
+input:checked + .slider-orange:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider-orange.round {
+  border-radius: 34px;
+}
+
+.slider-orange.round:before {
+  border-radius: 50%;
+}
+
+/* FIM TESTE SLIDER */
+
+.dark-mode .screen-edge-top {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.light-mode .screen-edge-top {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.screen-edge-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.dark-mode .screen-edge-bottom {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.light-mode .screen-edge-bottom {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.content-frame {
+    position: relative;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    width: 90vw;
+    max-width: 80%;
+    min-width: 700px;
+    height: 80vh;
+    max-height: 800px;
+    margin: auto auto 40px auto; 
+    /* border-top: 60px solid black; 
+    border-left: 15px solid black;
+    border-right: 15px solid black; */
+    border-top-left-radius: 40px;
+    border-top-right-radius: 50px;
+    /* background-color: rgba(0, 0, 0, 0.90);
+    backdrop-filter: blur(10px) saturate(160%);
+    color: black; */
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.dark-mode .content-frame {
+    border-top: 60px solid black; 
+    border-left: 15px solid black;
+    border-right: 15px solid black;
+    background-color: rgba(0, 0, 0, 0.90);
+    backdrop-filter: blur(10px) saturate(160%);
+    color: black;    
+}
+
+.light-mode .content-frame {
+    border-top: 60px solid white; 
+    border-left: 15px solid white;
+    border-right: 15px solid white;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(10px) saturate(160%);
+    color: black;
+}
+
+.font-name {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold; 
+    text-decoration: none;
+    /* color: white; */
+    font-size: 2.5em;
+}
+
+.dark-mode .font-name {
+    color: white;
+}
+
+.light-mode .font-name {
+    color: black;
+}
+
+.font-links {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    
+}
+
+.dark-mode .font-links {
+    color: white;
+}
+
+.light-mode .font-links {
+    color: black;
+}
+
+.border-top-text {
+    position: absolute;
+    top: -48px; 
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 2;
+}
+
+.top-nav ul {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.top-nav a:hover {
+    color: rgba(69, 65, 62, 0.4);
+}
+
+.content {    
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    margin-top: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding-right: 20px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.dark-mode .content {
+    color: white;
+}
+
+.light-mode .content {
+    color: black;
+}
+
+.content-title{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dark-mode.content-title{
+    color: white; 
+}
+
+.light-mode.content-title{
+    color: black;
+}
+
+.about-me-picture {
+    float: right;
+    width: 30%;
+    height: auto;
+    padding-left: 20px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    /* padding-left: 20px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
