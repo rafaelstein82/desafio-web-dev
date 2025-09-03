@@ -33,11 +33,11 @@ body {
 }
 
 .dark-mode .background-image {
-    background-image: url('../images/background-dark.jpg');
+    background-image: url('../images/background-desafio-dark.jpg');
 }
 
 .light-mode .background-image {
-    background-image: url('../images/background-light2.jpg');
+    background-image: url('../images/background-desafio-light.jpg');
 }
 
 .screen-edge-top {
