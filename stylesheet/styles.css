@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -173,47 +172,39 @@ input:checked + .slider-orange:before {
 .content-frame {
     position: relative;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     width: 90vw;
-    max-width: 80%;
+    max-width: 70%;
     min-width: 700px;
     height: 80vh;
     max-height: 800px;
     margin: auto auto 40px auto; 
-    /* border-top: 60px solid black; 
-    border-left: 15px solid black;
-    border-right: 15px solid black; */
-    border-top-left-radius: 40px;
-    border-top-right-radius: 50px;
-    /* background-color: rgba(0, 0, 0, 0.90);
-    backdrop-filter: blur(10px) saturate(160%);
-    color: black; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     overflow: visible;
     box-sizing: border-box;
 }
 
 .dark-mode .content-frame {
     border-top: 60px solid black; 
-    border-left: 15px solid black;
-    border-right: 15px solid black;
-    background-color: rgba(0, 0, 0, 0.90);
-    backdrop-filter: blur(10px) saturate(160%);
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px) saturate(160%);
     color: black;    
 }
 
 .light-mode .content-frame {
     border-top: 60px solid white; 
-    border-left: 15px solid white;
-    border-right: 15px solid white;
-    background-color: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(10px) saturate(160%);
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(2px) saturate(160%);
     color: black;
 }
 
 .font-name {
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-weight: bold; 
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal; 
     text-decoration: none;
     /* color: white; */
     font-size: 2.5em;
@@ -228,11 +219,11 @@ input:checked + .slider-orange:before {
 }
 
 .font-links {
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
     text-decoration: none;
-    color: white;
-    font-size: 1.5em;
+   /*  color: white; */
+    font-size: 1.3em;
     
 }
 
@@ -285,8 +276,9 @@ input:checked + .slider-orange:before {
     margin-right: 20%;
     margin-left: 20%;
     padding-right: 20px;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 1.3em;
+    font-family: 'Libertinus Serif', serif;
+    font-weight: 400; 
+    font-size: 1.1em;
     text-align: justify;
 }
 
@@ -299,11 +291,11 @@ input:checked + .slider-orange:before {
 }
 
 .content-title{
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 1.8em;
-    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25em;
+    font-weight: 500;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .dark-mode.content-title{
