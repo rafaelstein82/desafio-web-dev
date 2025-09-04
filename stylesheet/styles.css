@@ -324,7 +324,7 @@ input:checked + .slider-orange:before {
 
 /* Estilos página Equipe */
 
-.equipe-container {
+/* .equipe-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
@@ -335,7 +335,7 @@ input:checked + .slider-orange:before {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #333;
-}
+} */
 
 .accordion-item {
   border-bottom: 1px solid #ccc;
@@ -396,10 +396,3 @@ input:checked + .slider-orange:before {
   transform: rotate(180deg);
 }
 
-/*  .doctor-picture {
-    
-    
-    width: 100%;
-    height: 100%;
-    
-}  */
