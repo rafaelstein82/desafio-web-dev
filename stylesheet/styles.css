@@ -377,7 +377,7 @@ input:checked + .slider-orange:before {
 }
 
 .accordion-paragraph {
-  color: solid black;
+  color: black !important;
 }
 
 .accordion-info {
