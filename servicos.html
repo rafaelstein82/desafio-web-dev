@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="stylesheet/styles.css">
-    <script src="scripts/index.js"></script>
+  <meta charset="UTF-8">
+  <title>Clínica Vitalis | Index</title>
+  <link rel="stylesheet" href="stylesheet/styles.css">  
+  <script src="scripts/theme-init.js"></script>  
+  <script src="scripts/index.js" defer></script>
+  <style>
+    body {
+      visibility: hidden;
+    }
+  </style>
 </head>
 
-<body class="dark-mode">
+<body>
     <div class="background-image"></div>
     <header class="screen-edge-top">
         <div class="switch-container">
@@ -53,48 +58,42 @@
                             dermatológicos.</p>
                     </div>
 
-                    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
-                        <h3>Medicina Preventiva</h3>
-                        <img src="images/servicos/medicina preventiva.png" alt="Medicina Preventiva"
-                            style="width: 100%; max-width: 180px; display: block; margin: 12px auto;">
+                    <div class="quadro-servicos">
+                        <p class="content-title">Medicina Preventiva</p>
+                        <img class="image-servicos" src="images/servicos/medicina preventiva.png" alt="Medicina Preventiva">
                         <p>Exames e orientações voltadas à prevenção de doenças e promoção de hábitos saudáveis para
                             qualidade de vida.</p>
                     </div>
 
-                    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
-                        <h3>Cirurgia Plástica</h3>
-                        <img src="images/servicos/plastica.png" alt="Cirurgia Plástica"
-                            style="width: 100%; max-width: 180px; display: block; margin: 12px auto;">
+                    <div class="quadro-servicos">
+                        <p class="content-title">Cirurgia Plástica</p>
+                        <img class="image-servicos" src="images/servicos/plastica.png" alt="Cirurgia Plástica">
                         <p>Procedimentos estéticos e reparadores, visando melhorar a autoestima e corrigir alterações
                             físicas.</p>
                     </div>
 
-                    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
-                        <h3>Hematologista</h3>
-                        <img src="images/servicos/hematologia.png" alt="Hematologista"
-                            style="width: 100%; max-width: 180px; display: block; margin: 12px auto;">
+                    <div class="quadro-servicos">
+                        <p class="content-title">Hematologista</p>
+                        <img class="image-servicos" src="images/servicos/hematologia.png" alt="Hematologista">
                         <p>Especialista em doenças do sangue e da medula óssea, oferecendo diagnóstico e tratamento
                             adequado.</p>
                     </div>
 
-                    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
-                        <h3>Psicóloga</h3>
-                        <img src="images/servicos/psicologa.png" alt="Psicóloga"
-                            style="width: 100%; max-width: 180px; display: block; margin: 12px auto;">
+                    <div class="quadro-servicos">
+                        <p class="content-title">Psicóloga</p>
+                        <img class="image-servicos" src="images/servicos/psicologa.png" alt="Psicóloga">
                         <p>Apoio emocional e acompanhamento psicológico para equilíbrio mental e bem-estar.</p>
                     </div>
 
-                    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
-                        <h3>Fisioterapeuta</h3>
-                        <img src="images/servicos/fisioterapia.png" alt="Fisioterapeuta"
-                            style="width: 100%; max-width: 180px; display: block; margin: 12px auto;">
+                    <div class="quadro-servicos">
+                        <p class="content-title">Fisioterapeuta</p>
+                        <img class="image-servicos" src="images/servicos/fisioterapia.png" alt="Fisioterapeuta">
                         <p>Reabilitação física, prevenção de lesões e promoção da saúde motora e funcional.</p>
                     </div>
 
-                    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
-                        <h3>Nutricionista</h3>
-                        <img src="images/servicos/nutricionista.png" alt="Nutricionista"
-                            style="width: 100%; max-width: 180px; display: block; margin: 12px auto;">
+                    <div class="quadro-servicos">
+                        <p class="content-title">Nutricionista</p>
+                        <img class="image-servicos" src="images/servicos/nutricionista.png" alt="Nutricionista">
                         <p>Orientação alimentar personalizada para promover saúde, emagrecimento e prevenção de doenças.
                         </p>
                     </div>
@@ -108,7 +107,9 @@
     </section>
 
     <footer class="screen-edge-bottom">
-
+        <p style="text-align: center; margin: 16px 0;">
+            Produzido por Douglas Inácio Zimmer, Rafael Stein e Laysa Dias
+        </p>
     </footer>
 
 

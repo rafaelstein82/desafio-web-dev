@@ -222,7 +222,6 @@ input:checked + .slider-orange:before {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     text-decoration: none;
-   /*  color: white; */
     font-size: 1em;
     
 }
@@ -322,21 +321,6 @@ input:checked + .slider-orange:before {
     border: 2px solid black;
 }
 
-/* Estilos página Equipe */
-
-/* .equipe-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-family: 'Quicksand', serif;
-}
-
-.equipe-container h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #333;
-} */
-
 .accordion-item {
   border-bottom: 1px solid #ccc;
 }
@@ -347,12 +331,22 @@ input:checked + .slider-orange:before {
   align-items: center;
   cursor: pointer;
   padding: 1rem;
-  background: #f9f9f9;
+
   transition: background 0.8s ease;
 }
 
+.light-mode .accordion-header {
+    background: #f9f9f9;
+    color: solid black;
+}
+
+.dark-mode .accordion-header {
+  background: rgba(31, 31, 30, 0.8);
+  color: solid white;
+}
+
 .accordion-header:hover {
-  background: #f1f1f1;
+  background:rgba(102, 102, 98);
 }
 
 .nome-profissional {
@@ -398,10 +392,6 @@ input:checked + .slider-orange:before {
 
 /* Estilos Específicos da Página Serviços */
 
-.titulo-servicos {
-
-}
-
 .layout-servicos {
   display: grid; 
   grid-template-columns: 1f; 
@@ -416,11 +406,11 @@ input:checked + .slider-orange:before {
   border-radius: 10px;
 }
 
-.quadro-servicos .light-mode {
+.light-mode .quadro-servicos  {
   border-color: solid black;
 }
 
-.quadro-servicos .dark-mode {
+.dark-mode .quadro-servicos {
   border-color: solid white;
 }
 
