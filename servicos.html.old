@@ -34,21 +34,23 @@
             </nav>
         </span>
         <div class="content">
-            <section id="servicos">
-                <p class="content-title">Aqui você encontra:</p>
+            <section id="servicos" style="padding: 40px; font-family: Arial, sans-serif;">
+                <h2 style="text-align:center; margin-bottom: 30px;">Nossos Serviços</h2>
 
-                <div class="layout-servicos">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
 
-                    <div class="quadro-servicos">
-                        <p class="content-title">Clínico Geral</p>
-                        <img class="image-servicos" src="images/servicos/clinico geral.png" alt="Clínico Geral">
+                    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
+                        <h3>Clínico Geral</h3>
+                        <img src="images/servicos/clinico geral.png" alt="Clínico Geral"
+                            style="width: 100%; max-width: 180px; display: block; margin: 12px auto;">
                         <p>Atendimento médico inicial para avaliação da saúde, diagnóstico e encaminhamento para
                             especialidades quando necessário.</p>
                     </div>
 
-                    <div class="quadro-servicos">
-                        <p class="content-title">Dermatologista</p>
-                        <img class="image-servicos" src="images/servicos/dermatologia.png" alt="Dermatologista">
+                    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
+                        <h3>Dermatologista</h3>
+                        <img src="images/servicos/dermatologia.png" alt="Dermatologista"
+                            style="width: 100%; max-width: 180px; display: block; margin: 12px auto;">
                         <p>Tratamento e prevenção de doenças da pele, cabelos e unhas, além de cuidados estéticos
                             dermatológicos.</p>
                     </div>
@@ -103,7 +105,7 @@
 
 
 
-          
+            <span>portfolio.html</span>
         </div>
     </section>
 

@@ -389,10 +389,43 @@ input:checked + .slider-orange:before {
 }
 
 .accordion-item.active .accordion-content {
-  max-height: 500px; /* Ajuste se tiver muito texto */
+  max-height: 500px; /* Ajustar conforme qtde de texto */
 }
 
 .accordion-item.active .arrow {
   transform: rotate(180deg);
 }
 
+/* Estilos Específicos da Página Serviços */
+
+.titulo-servicos {
+
+}
+
+.layout-servicos {
+  display: grid; 
+  grid-template-columns: 1f; 
+  max-width: 400px;
+  gap: 20px;  
+  margin: 0 auto;
+}
+.quadro-servicos {
+  display: grid;
+  border: 1px solid;
+  padding: 20px; 
+  border-radius: 10px;
+}
+
+.quadro-servicos .light-mode {
+  border-color: solid black;
+}
+
+.quadro-servicos .dark-mode {
+  border-color: solid white;
+}
+
+.image-servicos {  
+  width: 100%;
+  max-width: 180px;
+  margin: 12px auto; 
+}
