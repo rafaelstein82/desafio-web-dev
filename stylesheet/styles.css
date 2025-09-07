@@ -351,7 +351,15 @@ input:checked + .slider-orange:before {
 
 .nome-profissional {
   font-weight: bold;
-  color: #333;
+  /* color: #333; */
+}
+
+.light-mode .nome-profissional {
+  color: solid black;
+}
+
+.dark-mode .nome-profissional {
+  color: solid white;
 }
 
 .arrow {
@@ -373,6 +381,14 @@ input:checked + .slider-orange:before {
   gap: 1rem;
   padding: 1rem 0;
   align-items: flex-start;
+}
+
+.light-mode .accordion-info {
+  color: solid black;
+}
+
+.dark-mode .accordion-info {
+  color: solid black;
 }
 
 .accordion-info img {
