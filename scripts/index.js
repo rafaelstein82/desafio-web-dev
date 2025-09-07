@@ -1,4 +1,26 @@
-if (document.readyState == 'loading') {
+(function() {
+  document.addEventListener('DOMContentLoaded', () => {
+    const body = document.body;
+    const switchInput = document.getElementById('mode-switch');
+
+    // Define o estado inicial do switch baseado no modo salvo
+    const currentMode = localStorage.getItem('mode') || 'light';
+    switchInput.checked = currentMode === 'dark';
+
+    // Evento de troca de tema
+    switchInput.addEventListener('change', () => {
+      const newMode = switchInput.checked ? 'dark' : 'light';
+
+      body.classList.remove('dark-mode', 'light-mode');
+      body.classList.add(newMode + '-mode');
+
+      localStorage.setItem('mode', newMode);
+    });
+  });
+})();
+
+
+/* if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
@@ -43,7 +65,7 @@ if (!localStorage.getItem('mode')) {
         document.body.classList.remove('light-mode');
         document.getElementById('mode-switch').checked = true;
     }
-}   
+}    */
    
 //Página Equipe - Elemento Sanfona
 document.addEventListener('DOMContentLoaded', function() {
