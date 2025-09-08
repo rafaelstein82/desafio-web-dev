@@ -95,7 +95,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: #FEAB6D; */
   background-color: rgba(102, 202, 149, 1);
   -webkit-transition: .4s;
   transition: .4s;
@@ -108,7 +107,6 @@ body {
   width: 26px;
   left: 2px;
   bottom: 2px;
-  /* background-color: white; */
   -webkit-transition: .4s;
   transition: .4s;
 }
